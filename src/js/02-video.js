@@ -5,7 +5,7 @@ const vimeoPlayer = document.getElementById('vimeo-player');
 const inFraime = new Vimeo.Player(ifraime);
 const player = new Player(ifraime);
 const CURRENT_TIME = "videoplayer-current-time";
-player.on('timeupdate', throttle(onPlay, 1000));
+player.on('timeupdate', throttle(onPlay, 1001));
 
 console.log(inFraime);
 console.log(vimeoPlayer);
