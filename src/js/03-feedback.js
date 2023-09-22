@@ -28,3 +28,11 @@ function initForm() {
     });
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  initForm();
+});
+
+const onFormInputThrottled = throttle(onFormInput, 1000); //  throttle з інтервалом 1000 мс
+formEl.addEventListener('input', onFormInputThrottled);
+  formEl.addEventListener('submit', onFormInputThrottled);
